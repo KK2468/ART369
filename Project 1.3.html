@@ -6,9 +6,28 @@
         List 4
       </title>
       <style>
-        {
-          box-sizing: border-box;
-        }
+        ul {
+            list-style-type: none;
+            top: 0;
+            padding: 5px;
+            margin: 10;
+            padding: 0;
+            width: 200px;
+            background-color: #D7FCE3;
+            border: 1px solid black;
+            }
+
+        li a {
+            display: block;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            }
+
+        li a:hover:not( .active) {
+            background-color: #E3D7FC;
+            color: white;
+            }
 
         .header {
           background-color: #D1F2EE;
@@ -23,66 +42,312 @@
           bottom: auto;
           }
 
-        .column {
-          float:left;
-          padding: 15px
-          }
-
-        .clearfix::after{
-          content: " ";
-          clear: both;
-          display:table;
-          }
-
-        .menu {
-          width: 25%
-          }
-
-        .content {
-          width: 75%
-          }
-
-        .menu ul {
-          list-style-type:none;
-          margin: 10px;
+        .topnav{
+          position: sticky;
+          top: 5px;
           padding: 5px;
+          border: 1px solid black;
+          background-color: #F2D9FC;
+          color: #58086b;
+          padding: 10px;
+          font-size: 20px;
+          text-align: center;
           }
 
-        .menu li:hover{
-          background-color: #8E69C1
-          padding: 8px;
-          margin-bottom: 8px;
-          color: green
-          }
+        .bottomnav{
+            font-size: 25px;
+            text-align: center;
+            }
+
+        a:visited {
+            color: #4A714A
+            }
+
+        a:hover {
+            color: #02D7BC
+            }
+
+        .scroll {
+            overflow-x: scroll;
+            width: 6798px;
+            }
+
       </style>
     </head>
 
     <body>
       <div class="header">
-        <h1> Variation 16 </h1><span style="float:right; font-size: 18"<h1 id = "top">.</h1></span>
+        <span style="float:right; font-size: 18"<h1 id = "top">.</h1></span>
+        <center><h1>&nbsp;&nbsp;&nbsp;List of Thoughts & Observations Made in the Common Room of JE Suite A31 :-) &nbsp; &nbsp;&nbsp;<i>[Part ii]</i></h1></center>
       </div>
-      <div class="clearfix">
-        <div class="column menu">
-          <nav>
-          <ul>
+      <div class = "topnav">
+        <nav>
+          <a href = "#V16">Variation 16</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with font size -->
+          <a href = "#V17">Variation 17</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with font family -->
+          <a href = "#V18">Variation 18</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with margins & padding -->
+          <a href = "#V19">Variation 19</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href = "#V20">Variation 20</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href = "#bottom">Fin</a>
+        </nav>
+      </div>
+
+      <div>
+          <h1 id="V16"><span style="float:right; font-size: 175px"> Variation 16</span></h1>
+          <nav><ul>
             <li><a href="#CPants">Corduroy Pants</a></li>
             <li><a href="#Fri">Friday Night</a></li>
             <li><a href="#home?">Home Away from Home</a></li>
             <li><a href="#lost">Lost in Thought</a></li>
-            <li><a href = "#bottom">Defying Gravity</a>
+            <li><a href = "#bottom">Defying Gravity</a></li>
           </ul>
         </nav>
-        </div>
-
-      <div class="column content">
-        <h2 id= "CPants">Corduroy Pants</h2>
-          <p> lots of text and tea </p>
-        <br><br><h2 id= "Fri">Friday Night</h2>
-        <br><br><h2 id= "home?">Home Away from Home</h2>
-        <br><br><h2 id= "lost">Lost in Thought</h2>
       </div>
-      <br><br>
+      <div class="scroll">
+        <br><br><br><h2 id= "CPants">Corduroy Pants</h2>
+          <span style = "font-size: 5px"> tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 8px"> &nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 10px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 13px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 15px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 20px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 25px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 28px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 35px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 45px; text-shadow: 0 0 3px #D1F5B7"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 55px; text-shadow: 0 0 10px #D1F5B7"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 65px; text-shadow: 5px 5px #D1F5B7"> &nbsp;&nbsp;tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+          <br><span style = "font-size: 75px; font-weight: bold; text-shadow: 8px 10px #D1F5B7"> tea teapot ceramics mugs gurgling water boiler thinking laptop keyboard typing sounds click-clack</span>
+
+      <br><br><br><center><h2 style="font-size: 115px" id= "Fri">Friday Night&nbsp;&nbsp;</h2></center>
+        <span style = "font-size: 85px; font-weight: bold; text-shadow: 15px 8px #C2B4EC">loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 75px; text-shadow: 8px 10px #C2B4EC">loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 65px; text-shadow: 5px 5px #C2B4EC"> &nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 55px; text-shadow: 0 0 10px #C2B4EC">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 45px; text-shadow: 0 0 3px #C2B4EC"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 35px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 28px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 24px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 20px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 15px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 13px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 10px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 8px"> &nbsp;&nbsp;loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+        <br><span style = "font-size: 5px">loud so many sounds at once youth start of the weekend music different ambiance drums throwback songs senses <i>Dancing Queen</i> chatter many sounds opposite permeating neighbors</span>
+
+      <br><br><h1 id= "home?">Home Away from Home</h1>
+        <span style = "font-size: 1px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u></span>
+        <br><span style = "font-size: 2px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 3px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 4px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 5px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 6px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 7px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 8px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 9px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u></span>
+        <br><span style = "font-size: 10px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 11px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 12px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 13px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 14px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 15px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 16px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 17px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u></span>
+        <br><span style = "font-size: 18px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 19px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 20px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 21px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 22px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 23px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 24px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 25px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u></span>
+        <br><span style = "font-size: 26px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 27px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 28px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 29px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 30px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 31px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 32px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 33px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 34px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 35px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 36px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 37px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 38px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u></span>
+        <br><span style = "font-size: 39px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 40px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 41px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 42px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+        <br><span style = "font-size: 43px">inside we are quiet, curled up with a good book. it's warm but not really...open window, crisp air, nighttime, cold wind inside, door <i>click the pen</i> lamp <b>warm-lighting</b> Medjool Dates fridge wood books spoon minimalist smartphone patterns sitting on warm futon pillows blue yellow amarillo remnants of Vale's things <b><i>my feet are cold </b></i>
+          pajamas braceletes texting <b>dark mode</b> <u>static memories</u><span>
+
+      <br><br><h2 id= "lost"><span style="font-size: 300px">&nbsp;&nbsp;&nbsp;Lost in Thought</span></h2>
+        <br><span style = "font-size: 90px">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 88px">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 86px; color: #34495E;background-color: #FEFEFF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 84px; color: #34495E;background-color: #FEFEFF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 82px; color: #5D6D7E; background-color: #FDFEFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 80px; color: #5D6D7E; background-color: #FDFEFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 78px; color: #5D6D7E; background-color: #FDFEFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 76px; color: #85929E; background-color: #FCFDFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 74px; color: #85929E; background-color: #FCFDFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 72px; color: #85929E; background-color: #FCFDFE">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 70px; color: #AEB6BF; background-color: #FAFCFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 68px; color: #AEB6BF; background-color: #FAFCFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 66px; color: #AEB6BF; background-color: #FAFCFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 64px; color: #D6DBDF; background-color: #F9FBFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 62px; color: #D6DBDF; background-color: #F9FBFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 60px; color: #D6DBDF; background-color: #F9FBFD">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 58px; color: #EBEDEF; background-color: #F7FAFC">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 56px; color: #EBEDEF; background-color: #F7FAFC">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 54px; color: #EBEDEF; background-color: #F7FAFC">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 52px; color: #EBEEF0; background-color: #F3F5F8">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 50px; color: #EBEEF0; background-color: #F3F5F8">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 48px; color: #EBEEF0; background-color: #F3F5F8">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 46px; color: #F3F5F8; background-color: #EBEEF0">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 44px; color: #F3F5F8; background-color: #EBEEF0">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 42px; color: #F3F5F8; background-color: #EBEEF0">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 40px; color: #F7FAFC; background-color: #EBEDEF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 38px; color: #F7FAFC; background-color: #EBEDEF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 36px; color: #F7FAFC; background-color: #EBEDEF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 34px; color: #F9FBFD; background-color: #D6DBDF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 32px; color: #F9FBFD; background-color: #D6DBDF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 30px; color: #F9FBFD; background-color: #D6DBDF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 28px; color: #FAFCFD; background-color: #AEB6BF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 26px; color: #FAFCFD; background-color: #AEB6BF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 24px; color: #FAFCFD; background-color: #AEB6BF">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 22px; color: #FCFDFE; background-color: #85929E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 20px; color: #FCFDFE; background-color: #85929E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 18px; color: #FCFDFE; background-color: #85929E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 16px; color: #FDFEFE; background-color: #5D6D7E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 14px; color: #FDFEFE; background-color: #5D6D7E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 12px; color: #FDFEFE; background-color: #5D6D7E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 10px; color: #FEFEFF; background-color: #34495E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 8px; color: #FEFEFF; background-color: #34495E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 6px; color: #FEFEFF; background-color: #34495E">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 4px; color: white; background-color: black">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 2px; color: white; background-color: black">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+        <br><span style = "font-size: 1px; color: white; background-color: black">communication phone calls tranquil content sleepy sleep <u><b>here</b></u> <i>NOW</i> <b><i>free</i></b> <b>empty</b> AWAKE water thirst i miss... friends pensive existing words in my head transcending time & space<span>
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br> <!--time to play with FONT FAMILIES!-->
+      <h1 id="V17"><span style="font-size: 175px">&nbsp;&nbsp;&nbsp;Variation 17</span></h1><br>
+      <div style="background-color:#F9F4C7; font-family:Garamond">
+        <span style="font-size: 200px; padding: 10px">Tea</span>
+        <p style="font-size: 100px; padding:30px">
+          gurgling water boiler <b>teapot</b> <b><i>mugs</i></b> <i>ceramics</i> <u>Chie</u>
+          <i>corduroy pants</i> <b><i>thinking</i></b> <b>click-clack</b> keyboard laptop</p>
+        <span style="font-size: 200px; float:right; padding: 10px">Tea</span>
+        <br><br><br><br><br><br><br><br>
+      </div>
+
+      <br><br><br><br><br>
+      <div style="background-color:#F6F5E6; font-family: Courier; padding: 20px; margin: 5%;">
+        <h2 style="font-size: 105px;"><u> Home Away From Home</u></h2>
+        <p style="font-size:65px; padding: 20px"> inside we are <i>quiet</i>
+          <br>curled up with a <b>good book</b>
+          <br>it was <em>warm but not really...</em>
+          <br><br>open window
+          <br>crisp air
+          <br>nighttime
+          <br>cold
+          <br>wind
+          <br><br><span style="display: block"> my feet are <i>cold</i></span>
+          <br><u>Inside</u>
+          <br><i>click</i>
+          <br><b>DOOR</b>
+          <br>lamp
+          <br>warm lighting
+          <br>wood
+          <br>pen
+          <br>books
+          <br>minimalist
+          <br>fridge
+          <br>Medjool Dates
+          <br>spoon
+          <br>patterns
+          <br>pajamas
+          <br>pillows
+          <br>blue
+          <br>yellow
+          <br><i>amarillo</i>
+          <br><br><b><i><span style="display: block">remnants of Vale's things</span></i></b>
+          <br>braceletes
+          <br>smartphone
+          <br>texting
+          <br>dark mode
+          <center><br><br><b><span style="display: block; font-size:75px">S&nbsp;&nbsp;T&nbsp;&nbsp;A&nbsp;&nbsp;T&nbsp;&nbsp;I&nbsp;&nbsp;C</b></span>
+          <i><span style="font-size: 20px">memories</span></i></center>
+        </p>
+      </div>
+
+      <div style="background-color:#F5FCE9; font-family: sans-serif; padding: 20px; margin: 15%;">
+        <h2 style="font-size: 95px;"><u>Start of the Weekend</u></h2>
+        <p style="font-size:45px; padding: 20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friday Night
+          <br><br> so many sounds at once &nbsp;&nbsp;<i>different ambiance</i>
+          <br>throwback songs: <b>Dancing Queen</b>
+          <br>many sounds <i>permeating</i>
+          <br>neighbors
+          <br><b><i>opposite</i></b>
+          <br><i>chatter</i>
+          <br>senses
+          <br><b>drums</b> music
+          <br>loud
+          <br><center><span style="font-size: 60px">Y&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;U&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;H</span></center>
+        </p>
+      </div>
+
+      <br><br><br><br><br><br><br><br>
       <div class="footer">
+        <center><h1 id="bottom">The End...<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...for now</h1></center>
+        <br><br><br><center>
+          <a href = "#V16">Variation 16</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with font-size -->
+          <a href = "#V17">Variation 17</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with font-family -->
+          <a href = "#V18">Variation 18</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with -->
+          <a href = "#V19">Variation 19</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with -->
+          <a href = "#V20">Variation 20</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- Playing with -->
+        </center><br><br>
         <center>
           <a href = "#top">Back to Top</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a href = "index.html">There's No Place Like Home</a></bottom></div>
