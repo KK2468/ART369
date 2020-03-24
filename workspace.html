@@ -2,10 +2,12 @@
 <html>
 
   <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/main.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workspace</title>
   </head>
 
-  <body style="background-color: black">
     <style>
 
       a:visited {
@@ -38,7 +40,7 @@
         height: 400px;
         width: 500px;
         margin: 40px;
-        margin-left: 85px
+        <-margin-left: 85px->
       }
 
       .projects{
@@ -58,7 +60,79 @@
         margin: 40px
       }
 
+      .flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: black;
+        }
+
+
+      .flex > div{
+        text-align: center;
+        padding: 40px;
+        height: 400px;
+        width: 500px;
+        margin: 40px;
+      }
+
+     @media screen and (max-width: 1350px) {
+     .flex > div {
+        padding: 40px;
+        height: 500px;
+        width: 450px;
+        margin: 40px;
+        font-size: 95px;
+        text-align: center;
+          }
+        }
+
+     @media screen and (max-width: 1249px) {
+     .flex > div {
+        padding: 40px;
+        height: 400px;
+        width: 400px;
+        margin: 40px;
+        font-size: 85px;
+        text-align: center;
+          }
+        }
+
+      @media screen and (max-width: 1148px) {
+     .flex > div {
+        padding: 40px;
+        height: 375px;
+        width: 375px;
+        margin: 30px;
+        font-size: 75px;
+        text-align: center;
+          }
+        }
+
+  	@media screen and (max-width: 1058px) {
+     .flex > div {
+        padding: 40px;
+        height: 350px;
+        width: 350px;
+        margin: 30px;
+        font-size: 65px;
+        text-align: center;
+          }
+        }
+
+     @media screen and (max-width: 907px) {
+     .flex > div {
+        padding: 40px;
+        height: 325px;
+        width: 325px;
+        margin: 30px;
+        font-size: 55px;
+        text-align: center;
+          }
+        }
+
     </style>
+    <body class="flex">
       <br><br><br><br><br>
       <div class="exercises">
         <br><a href="Exercises.html">exercises</a>
@@ -67,8 +141,8 @@
         <br><a href="Projects.html">projects</a>
       </div>
       <br><br><br><br><br><br><br><br>
-      <div><br><br><br><br><br><br><br><br>
-        <center><a href="index.html", style="font-size:35px; font-style: italic"> Back</a></center>
+      <div><br><br><br><br><br>
+        <a href="index.html", style="font-size:75px; font-style: italic; text-align: center;">Back</a>
       </div>
     </body>
   </html>
