@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>
+      Try Not 2 Die
+    </title>
+
+    <style>
+      p, button {
+        font-size: 25px;
+        margin: 2em;
+        font-family: Courier
+        }
+
+      a {
+        display: block;
+        }
+
+      button {
+        display: block;
+        cursor: pointer;
+        border-radius: 5px;
+        }
+
+      button:hover {
+        box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+      button:active {
+        background-color: thistle;
+        }
+    </style>
+  </head>
+
+  <body style="background color: #CFFFDB">
+    <h1><center>Transcending Time & Space Through Virtual Reality<center><h1>
+
+    <button class = "start_button">
+      Start/Stop
+    </button>
+
+    <button class="reset">
+      Reset
+    </button>
+
+
+  <script> //1. for color change intervals...somehow apply to background? and time of day...w img of sun moving across
+    //declaring universal variables
+      var running;
+      var seconds = 0;
+      var start_timer;
+
+    //making an increment function: to increase the value of the variable: seconds
+      function increment() {
+        seconds = seconds + 1;
+        console.log(seconds);
+        //making the function color WITHIN increment()
+        color();
+      }
+
+      //defining the color function, changing background depending on sec passed
+        function color() {
+          seconds = seconds % 150;
+          if (seconds == 1) { //can JS indicate any increments? like repeate this color at each multiple of 3, etc...so dont have to rewrite more color code...
+            $('body').css('background-color', 'ghostwhite');
+          } else if (seconds == 5) {
+            $('body').css('background-color', 'whitesmoke');
+          } else if (seconds == 10) {
+            $('body').css('background-color', 'lightblue' );
+          } else if (seconds == 15) {
+            $('body').css('background-color', 'lightskyblue');
+          } else if (seconds == 25) {
+            $('body').css('background-color', 'deepskyblue');
+          } else if (seconds == 35) {
+            $('body').css('background-color', 'dogerblue');
+          } else if (seconds == 45) {
+            $('body').css('background-color', 'deepskyblue');
+          } else if (seconds == 55) {
+            $('body').css('background-color', 'cornflowerblue');
+          } else if (seconds == 65) {
+            $('body').css('background-color', 'royalblue');
+          } else if (seconds == 75) {
+            $('body').css('background-color', 'mediumblue');
+          } else if (seconds == 85) {
+            $('body').css('background-color', 'darkblue');
+          } else if (seconds == 95) {
+            $('body').css('background-color', 'midnightblue');
+          } else if (seconds == 100) {
+            $('body').css('background-color', 'black');
+          } else if (seconds == 105) {
+            $('body').css('background-color', 'midnightblue');
+          } else if (seconds == 110) {
+            $('body').css('background-color', 'royalblue');
+          } else if (seconds == 115) {
+            $('body').css('background-color', 'cornflowerblue');
+          } else if (seconds == 120) {
+            $('body').css('background-color', 'deepskyblue');
+          } else if (seconds == 125) {
+            $('body').css('background-color', 'dogerblue');
+          } else if (seconds == 130) {
+            $('body').css('background-color', 'deepskyblue');
+          } else if (seconds == 135) {
+            $('body').css('background-color', 'lightskyblue');
+          } else if (seconds == 140) {
+            $('body').css('background-color', 'lightblue');
+          } else if (seconds == 145) {
+            $('body').css('background-color', 'whitesmoke');
+          } else if (seconds == 150) {
+            $('body').css('background-color', 'ghostwhite');
+          }}
+      //function: start --> 1. set running variable to true & starts timer via setInterval via function: increment
+      function start() {
+        running = true;
+        start_timer = setInterval(increment, 1000); //1000 (milliseconds)= 1 sec
+      }
+
+      //function: stop does the opposite, makes running = F and clears interval
+      function stop() {
+        running = false;
+        clearInterval(start_timer);
+      }
+
+      $(document).ready(function(){
+          //what to do when element w class "start button" clicked
+          $('.start_button').click(function(){
+            //check if running == T
+            if (running) {
+              //if T, call the function stop to stop timer
+              stop();
+            }
+            //but if running == F, call function to start
+            else {
+              start()
+            }
+            console.log("timer is running: " + running);
+          });
+
+          //what to do when reset is clicked!
+          $('.reset').click(function(){
+            //if timer running, call STOP function
+            if (running){
+              stop();
+            }
+            //set varaible seconds back to 0!
+            seconds = 0;
+            //turn body back to ORIGINAL color
+            $('body').css('background-color', 'initial');
+            console.log("timer reset; seconds =" + seconds);
+          });
+      });
+
+  </script>
+
+  <script> //2. for the clock
+    var clockTime = setInterval(myTimer, 1000);
+
+    function myTimer() {
+      var d = new Date();
+      var t = d.toLocaleTimeString();
+      
+    }
+
+function myTimer() {
+var d = new Date();
+var t = d.toLocaleTimeString();
+document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+clearInterval(myVar);
+}
+  </script>
+</body>
+
+</html>
