@@ -1,0 +1,173 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>
+      Clock Test
+    </title>
+  </head>
+
+  <style>
+    p, button {
+      font-size: 1vw;
+      margin: 1.2px;
+      font-family: Courier
+      }
+
+    a {
+      display: block;
+      }
+
+    button {
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
+      }
+
+    button:hover {
+      box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    button:active {
+      background-color: thistle;
+      }
+
+    .clock {
+      font-size: 6vw;
+      text-align: center;
+      }
+
+    img {
+      width:auto;
+      display:none;
+      }
+
+  </style>
+
+<script> //clock
+
+  function clock() {// We create a new Date object and assign it to a variable called "time".
+    var time = new Date(),
+
+    // Access the "getHours" method on the Date object with the dot accessor.
+    hours = time.getHours(),
+
+    // Access the "getMinutes" method with the dot accessor.
+    minutes = time.getMinutes(),
+
+
+    seconds = time.getSeconds();
+
+    document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+
+  function harold(standIn) {
+    if (standIn < 10) {
+      standIn = '0' + standIn
+    }
+    return standIn;
+  }
+}
+setInterval(clock, 1000);
+</script>
+
+<script> //color
+  var running;
+  var seconds = 0;
+  var start_timer;
+
+  function increment(){
+    seconds = seconds + 1;
+    console.log(seconds);
+    color();
+  }
+
+  function color() {
+    seconds = seconds % 11
+    if (seconds == 1) {
+      $('body').css('background-color', 'yellow');
+      $('#boots1').css('display', 'none');
+    } else if (seconds == 5){
+      $('#boots').css('display', 'block');
+      $('body').css('background-color', 'deepskyblue');
+    } else if (seconds == 10){
+      $('#boots').css('display', 'none');
+      $('#boots1').css('display', 'block');
+      $('body').css('background-color', 'green');
+    }}
+
+  function start(){
+    running = true;
+    start_timer = setInterval(increment, 1000);
+    }
+
+  function stop(){
+    running = false;
+    clearInterval(start_timer);
+    }
+
+  $(document).ready(function(){
+    $('.start_button').click(function(){
+      if (running) {
+        stop();
+      }
+      else {
+        start()
+      }
+      console.log("timer is running:" + running);
+    });
+
+    $('.reset').click(function(){
+      if (running){
+        stop();
+      }
+      seconds = 0;
+      $('body').css('background-color', 'initial');
+      $("body").css("background-image", "none");
+      $('img').hide();
+      console.log("timer reset; seconds =" + seconds);
+    });
+  });
+
+</script>
+
+<body>
+  <br><br>
+  <div><center>
+    <span style="font-size: 4vw">Growth</span>
+  </center></div><br>
+      <div style="margin-left: 43.5%">
+        <button class = "start_button", style="float: left">
+            Start/Stop
+        </button>
+        <button class="reset", style="float: left">
+             Reset
+        </button></div>
+      <br><br>
+      <div class="clock"></div>
+      <!-- viewbox: left up grow/shrink length??-->
+      <svg viewBox="0 30 200 100" xmlns="http://www.w3.org/2000/svg">
+      <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+        <path d="M -5 100 Q 105 -25 200 110" stroke="transparent" fill="transparent"/>
+      </svg>
+        <circle r="5" fill="red">
+          <animateMotion dur="5s"
+            repeatCount="indefinite";
+            animation-iteration-count= "infinite";
+            animation-direction= "alternate";
+            animation-timing-funtion="ease-in-out";
+            begin = "3s"
+            path="M -5 100 Q 95 -25 200 110"/>
+        </circle>
+        <img id="boots" src="leaf-0.png">
+        <img id="boots1" src="leaf-1.1.png">
+      </svg>
+
+</body>
+
+</html>
