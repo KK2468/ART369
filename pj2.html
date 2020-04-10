@@ -1,4 +1,4 @@
-$<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -7,108 +7,141 @@ $<!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>
-      Project 2
+      Circadian...
     </title>
 
     <style>
-      p, button {
-        font-size: 1vw;
-        margin: .5vw;
-        font-family: Courier
-        }
 
-      a {
-        display: block;
-        }
-
-      button {
-        display: block;
-        cursor: pointer;
-        border-radius: 5px;
-        padding: 5px;
-        }
-
-      button:hover {
-        box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-      button:active {
-        background-color: thistle;
-        }
-
-      .clock {
-        font-size: 6.5vw;
-        text-align: center;
-        }
-
-        img {
-          width: auto;
-          display: none;
-          }
+    p, button {
+      font-size: 1vw;
+      margin: .5vw;
+      font-family: Courier
+      }
 
 
+    a {
+      display: block;
+      }
+
+    button {
+      display: block;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px;
+      }
+
+    button:hover {
+      box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    button:active {
+      background-color: thistle;
+      }
+
+    .clock {
+      font-size: 6.5vw;
+      text-align: center;
+      }
+
+    img {
+      height:80vh;
+      display: none;
+      top:0px;
+      margin: auto;
+      }
+
+      .title {
+      font-size: 4vw;
+      text-align:center;
+      }
+
+    .container {
+      position:relative;
+      top: -5px;
+      }
+
+    .image_container {
+      width: 100%;
+      position: absolute;
+      top: -30px;
+      }
+
+    .footer {
+      text-align: center;
+      font-size: 1vw;
+    }
     </style>
 
   </head>
 
   <body>
     <br>
-    <div><center>
-      <span style="font-size: 4vw">Growth</span>
-    </center></div><br>
-        <div style="margin-left: 43.5%">
-          <button class = "start_button", style="float: left">
-              Start/Stop
-          </button>
-          <button class="reset", style="float: left">
-               Reset
+    <div class="title">
+      Growth
+    </div>
+
+    <div style="margin-left: 43.5%">
+      <button class = "start_button", style="float: left">
+        Start/Stop
+      </button>
+      <button class="reset", style="float: left">
+         Reset
           </button></div>
         <br><br><br>
-        <div class="clock"></div>
-    <!-- viewbox: left up grow/shrink length??-->
-    <svg viewBox="0 30 200 100" xmlns="http://www.w3.org/2000/svg">
-    <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
-      <path d="M -5 100 Q 95 -25 200 110" stroke="transparent" fill="transparent"/>
-    </svg>
-      <circle r="7" fill="yellow">
-        <animateMotion dur="150s"
-          repeatCount="indefinite";
-          animation-iteration-count= "infinite";
-          animation-direction= "alternate";
-          animation-timing-funtion="ease-in-out";
-          begin = "3s";
-          path="M -5 100 Q 95 -25 200 110"/>
-      </circle>
-      <img id="plant0" src="leaf-0.png">
-      <img id="plant1" src="leaf-1.png">
-      <img id="plant2" src="leaf1.2.png">
-      <img id="plant3" src="leaf-2.png">
-      <img id="plant4" src="leaf-2.1.png">
-      <img id="plant5" src="leaf-3.png">
-      <img id="plant6" src="leaf-4.png">
-      <img id="plant7" src="leaf-5.png">
-      <img id="plant8" src="leaf-6.png">
-      <img id="plant9" src="leaf-7.png">
-      <img id="plant10" src="leaf-8.png">
-      <img id="plant11" src="leaf-9.png">
-      <img id="plant12" src="leaf-10.png">
-      <img id="plant13" src="leaf-11.png">
-      <img id="plant14" src="leaf-12.png">
-      <img id="plant15" src="leaf-13.png">
-      <img id="plant16" src="leaf-14.png">
-      <img id="plant17" src="leaf-15.png">
-      <img id="plant18" src="leaf-16.png">
-      <img id="plant19" src="leaf-17.png">
-      <img id="plant20" src="leaf-18.png">
-      <img id="plant21" src="leaf-19.png">
-      <img id="plant22" src="leaf-20.png">
-    </svg>
-    <br><br>
-    <center>
-      <a href = "Projects.html">Projects</a>&nbsp;&nbsp;&nbsp;
-      <a href = "#top">Back to Top</a>&nbsp;&nbsp;&nbsp;
-      <a href = "index.html">There's No Place Like Home</a></bottom></div>
-    </center>
+
+   <div class="clock"></div>
+    <div class="container">
+
+     <div class="sun">
+       <!-- viewbox: left up grow/shrink length??-->
+       <svg viewBox="0 30 200 100" xmlns="http://www.w3.org/2000/svg">
+         <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+           <path d="M -5 100 Q 95 -25 200 110" stroke="transparent" fill="transparent"/>
+         </svg>
+         <circle r="7" fill="yellow">
+           <animateMotion dur="150s"
+              repeatCount="indefinite";
+              animation-iteration-count= "infinite";
+              animation-direction= "alternate";
+              animation-timing-funtion="ease-in-out";
+              begin = "3s";
+              path="M -5 100 Q 95 -25 200 110"/>
+            </circle>
+          </svg>
+        </div>
+
+        <div class="image_container">
+          <img id="plant0" src="leaf-0.png">
+          <img id="plant1" src="leaf-1.png">
+          <img id="plant2" src="leaf-1.1.png">
+          <img id="plant3" src="leaf-2.png">
+          <img id="plant4" src="leaf-2.1.png">
+          <img id="plant5" src="leaf-3.png">
+          <img id="plant6" src="leaf-4.png">
+          <img id="plant7" src="leaf-5.png">
+          <img id="plant8" src="leaf-6.png">
+          <img id="plant9" src="leaf-7.png">
+          <img id="plant10" src="leaf-8.png">
+          <img id="plant11" src="leaf-9.png">
+          <img id="plant12" src="leaf-10.png">
+          <img id="plant13" src="leaf-11.png">
+          <img id="plant14" src="leaf-12.png">
+          <img id="plant15" src="leaf-13.png">
+          <img id="plant16" src="leaf-14.png">
+          <img id="plant17" src="leaf-15.png">
+          <img id="plant18" src="leaf-16.png">
+          <img id="plant19" src="leaf-17.png">
+          <img id="plant20" src="leaf-18.png">
+          <img id="plant21" src="leaf-19.png">
+          <img id="plant22" src="leaf-20.png">
+        </div>
+      </div>
+      <div class="footer">
+        <a href = "Projects.html" style="float:left">Projects</a>
+        <a href = "index.html" style="float:right">There's No Place Like Home</a>
+      </div>
+
+  </body>
 
   <script> //1. for color change intervals...somehow apply to background? and time of day...w img of sun moving across
     //declaring universal variables
@@ -126,7 +159,7 @@ $<!DOCTYPE html>
 
       //defining the color function, changing background depending on sec passed
         function color() {
-          seconds = seconds % 150;
+          seconds = seconds % 155;
           if (seconds == 1) { //can JS indicate any increments? like repeate this color at each multiple of 3, etc...so dont have to rewrite more color code...
             $('body').css('background-color', '#422556');//1
             $('#plant22').css('display', 'none');
@@ -219,6 +252,8 @@ $<!DOCTYPE html>
             $('body').css('background-color', '#0D0D3A'); //23
             $('#plant21').css('display', 'none');
             $('#plant22').css('display', 'block');
+          } else if (seconds == 155) {
+            $('#plant22').css('display', 'none');
           }}
       //function: start --> 1. set running variable to true & starts timer via setInterval via function: increment
       function start() {
