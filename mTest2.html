@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      .content {
+        position: relative;
+        background-color: blue;
+        opacity: 100%;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .map {
+        width: 99vw;
+        height: 500px;
+        border: 3px solid lime;
+        background-image: url("Brooklyn Map.png");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        opacity: 0.5;
+      }
+
+      .pin_container {
+        width: 99vw;
+        height: 500px;
+        border: 3px solid red;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+      .pin {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        top: 400px;
+        left: 40vw;
+      }
+
+      .link {
+        position:fixed;
+        bottom:20px;
+        left:20px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="map"></div>
+      <div class="pin_container">
+        <div class="pin"></div>
+      </div>
+    </div>
+
+    <div class="link">
+      Projects
+    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

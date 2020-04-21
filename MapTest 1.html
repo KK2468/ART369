@@ -20,21 +20,82 @@
         }
     </style>-->
     <style>
-      .box {
-        top: 620px;
-        left: 655px;
-        width: 3%;
-        height:3%;
-        background-image: url("https://toppng.com/uploads/preview/map-pin-png-google-map-red-pi-11562910634ig2dnihn8e.png");
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position:absolute;
-        }
+    /*HOME pin*/
+    .box {
+      top: 820px;
+      left: 835px;
+      width: 3%;
+      height:3%;
+      background-image: url("https://toppng.com/uploads/preview/map-pin-png-google-map-red-pi-11562910634ig2dnihn8e.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position:absolute;
+      }
 
       .box:hover > .pinText {
         display: block;
       }
+
+      @media screen and (max-width: 768px) {
+        .box {
+          top: 420px;
+          left: 435px;:
+        }
+      }
+
+      @media screen and (max-width: 414px) {
+        .box {
+          top: 230px;
+          left: 240px;:
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        .box {
+          top: 205px;
+          left: 220px;:
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        .box {
+          top: 195px;
+          left: 220px;:
+        }
+      }
+
+      .left{
+        position:fixed;
+        bottom:5px;
+        left:20px;
+        font-size: 1vw;
+        float: left
+        }
+
+        @media screen and (max-width: 768px) {
+          .left {
+            bottom:450px;
+          }
+        }
+
+        @media screen and (max-width: 414px) {
+          .left {
+            bottom:435px;
+          }
+        }
+
+        @media screen and (max-width: 375px) {
+          .left {
+            bottom:395px;
+          }
+        }
+
+        @media screen and (max-width: 360px) {
+          .left {
+            bottom:380px;
+          }
+        }
 
     .pinText {
       position: absolute;
@@ -44,15 +105,16 @@
       white-space: nowrap;
       display: none;
       background-color: white;
-      opacity:85%;
-      width:20vw;
+      opacity:95%;
+      width: auto;
       font-size: 1.2vw;
       }
 
       .tooltip {
         position: relative;
         display: inline-block;
-        border-bottom: 1px dotted black;
+        border-radius: 10%;
+        border: .5px solid black;
         }
 
       .tooltip.tooltiptext {
@@ -84,27 +146,132 @@
         opacity: 95%
       }
 
+
+/*sheepshead bay bridge pin*/
+    .box1 {
+      top: 890px;
+      left: 855px;
+      width: 3%;
+      height:3%;
+      background-image: url("https://toppng.com/uploads/preview/map-pin-png-google-map-red-pi-11562910634ig2dnihn8e.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position:absolute;
+      }
+
+      .box1:hover > .pinText {
+        display: block;
+      }
+
+        .L1_bridge{
+          position:fixed;
+          bottom:5px;
+          left:20px;
+          font-size: 1vw;
+          float: left
+          }
+
+          @media screen and (max-width: 768px) {
+            .L1_bridge {
+              bottom:450px;
+            }
+          }
+
+          @media screen and (max-width: 414px) {
+            .L1_bridge {
+              bottom:435px;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .L1_bridge {
+              bottom:395px;
+            }
+          }
+
+          @media screen and (max-width: 360px) {
+            .L1_bridge {
+              bottom:380px;
+            }
+          }
+
+        .r1_bridge{
+          position:fixed;
+          bottom:5px;
+          right:20px;
+          font-size: 1vw;
+          float: right
+          }
+
+          @media screen and (max-width: 768px) {
+            .r1_bridge {
+              bottom:450px;
+            }
+          }
+
+          @media screen and (max-width: 414px) {
+            .r1_bridge {
+              bottom:435px;
+            }
+          }
+
+          @media screen and (max-width: 375px) {
+            .r1_bridge {
+              bottom:395px;
+            }
+          }
+
+          @media screen and (max-width: 360px) {
+            .r1_bridge {
+              bottom:380px;
+            }
+          }
+
     </style>
 
   </head>
 
   <body style="text-align: center;">
-    <br><span style="font-size: 1vw; float: left"><a href = "Projects.html">Projects</a></span>
-    <span style="font-size: 1vw; float: right"><a href = "index.html">There's No Place Like Home</a></span>
-    <img src="Brooklyn Map.png" usemap="#bklyn" height="100%" width="100%">
-    <map name="bklyn">
+    <div>
+     <img src="Brooklyn Map.png" usemap="#bklyn" height="100%" width="100%" style="margin-left: 5px; margin-right: 5px">
+     <map name="bklyn">
+
+       <!--Home Pin -->
       <div id="pin1" class="box">
         <div class="pinText">
-      <div class="tooltip">
-        <h3>Home</h3>
-        <p class="tooltiptext">
-          They say home is where the heart is...
-          <br><img src="2519 Home.png" height="75%" width="75%">
-          <br><br><a href="E19thome.html">Explore! </a>
-        </p>
+          <div class="tooltip">
+            <h3>Home</h3>
+            <p class="tooltiptext">
+              They say home is where the heart is...
+              <br><br><img src="2519 Home.png" height="85%" width="85%">
+              <br><br><a href="E19th.html">Explore! </a>
+            </p>
+          </div>
+        </div>
       </div>
-      <!--</div>-->
+
+      <!--Ocean Ave Pedestrian Bridge Pin -->
+      <div id="pin2" class="box1">
+        <div class="pinText">
+          <div class="tooltip">
+            <h3>Blue Bridge</h3>
+            <p class="tooltiptext">
+              For the longest time, I didn't realize this bridge actually had a name...
+              <br><br><img src="Sheepshead Bridge.jpg" height="85%" width="85%">
+              <br><br><a href="OurBridge.html">Explore! </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
     </map>
+   </div>
+
+   <div>
+     <span class="left"><a href = "Projects.html">Projects</a></span>
+     <br><span class="right"><a href = "index.html">There's No Place Like Home</a></span>
+   </div>
   </body>
 
   <script>
