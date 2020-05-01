@@ -36,11 +36,13 @@
     .intype{
       overflow: hidden; /* Ensures the content is not revealed until the animation */
       border-right: .15em solid white; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
+      white-space: normal; /* Keeps the content on a single line */
       margin: 0 auto; /* Gives that scrolling effect as the typing happens */
       letter-spacing: .15em; /* Adjust as needed */
       font-family: Courier;
-      font-size: 20px;
+      font-size: 1.5vw;
+      width: 50%;
+      text-align: center;
       animation:
       typing 10s steps(100, end),
       blink-caret .5s steps(1) infinite;
@@ -49,7 +51,7 @@
       /* The typing effect */
         @keyframes typing {
           from { width: 0 }
-          to { width: 90% }
+          to { width: 50% }
         }
 
         /* The typewriter cursor effect */
@@ -58,13 +60,53 @@
           50% { border-color: white; }
         }
 
+      .intype span:nth-child(2){
+        white-space: normal;
+        overflow: hidden;
+        opacity: 0;
+        animation: typing2 10s steps(100, end),
+        blink-caret .5s steps(1) infinite;
+        animation delay: 11s;
+        animation-fill-mode: forwards;
+        }
+
+      .intype span:nth-child(3){
+        white-space: normal;
+        overflow: hidden;
+        opacity: 0;
+        animation: typing3 10s steps(100, end),
+        blink-caret .5s steps(1) infinite;
+        animation delay: 21s;
+        animation-fill-mode: forwards;
+        }
+
+      @keyframes typing2 {
+        0%{width: 0;}
+        from {opacity:0;}
+        1%{opacity:1;}
+        to{opacity:1;}
+        100%{opacity:1;}
+        }
+
+      @keyframes typing3 {
+        0%{width: 0;}
+        from {opacity:0;}
+        1%{opacity:1;}
+        to{opacity:1;}
+        100%{opacity:1;}
+        }
+
   </style>
 
   <body class="base">
     <div>
       <h1 class="hding"> about </h1>
-      <p class="intype", style="text-align: center">
-        Hi, welcome to my webpage for ART 369, Interactive Design & the Internet...</p>
+      <p class="intype">
+        <span style="text-align: center">
+          Hi, welcome to my webpage for ART 369, Interactive Design & the Internet...</span>
+        <br><br><span style="text-align: center">Here you will find some projects and exercises using HTML, CSS, and Javascript that I've been working on for this past semester!!</span>
+        <br><br><span style="text-align: center">Hope you enjoy!! :) </span>
+      </p>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div>
       <a href="index.html", style="font-family: courier; font-size: 15px;">
