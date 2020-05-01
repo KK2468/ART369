@@ -12,7 +12,7 @@
 
   <style>
     body {
-      background-image: url("Sheepshead Dock bkgrd.jpg");
+      background-color: lightblue;
       }
 
       * {box-sizing:border-box}
@@ -33,13 +33,12 @@
       .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 60%;
         width: auto;
-        margin-top: -22px;
         padding: 16px;
         color: white;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 3.5vw;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
@@ -57,20 +56,31 @@
       }
       /* On hover, add a black background color with a little bit see-through */
       .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-      }
+        background-color: black;
+        color: white;
+        opacity: 50%;
+        }
 
       /* Caption text */
       .text {
         color: black;
-        background-color: lightblue;
         font-size: 2vw;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
+        padding: .1vw;
+        position: relative;
+        bottom: 1.5%;
         width: 100%;
         text-align: center;
-      }
+        }
+
+        @media screen and (max-width:414px) {
+          .text{
+              bottom: 7.5%;
+            }}
+
+        @media screen and (max-width:375px) {
+          .text{
+              bottom: 7.5%;
+            }}
 
       /* Number text (1/3 etc) */
       .numbertext {
@@ -78,9 +88,24 @@
         font-size: 2vw;
         padding: 8px 12px;
         position: absolute;
-        top: 0;
+        top: 34.5%;
         opacity: 75%
-      }
+        }
+
+        @media screen and (max-width:768px) {
+          .numbertext{
+              top: 28%;
+            }}
+
+        @media screen and (max-width:414px) {
+          .numbertext{
+              top: 27%;
+            }}
+
+        @media screen and (max-width:375px) {
+          .numbertext{
+              top: 22%;
+            }}
 
       /* The dots/bullets/indicators */
       .dot {
@@ -114,43 +139,94 @@
         to {opacity: 1}
       }
 
+      .leftfish {
+        float: left;
+        margin-left: 2em;
+        width: 45%;
+        position: relative;
+        }
+
+        @media screen and (max-width:414px) {
+          .leftfish{
+            margin-left: 1em;
+            margin-top: -1em
+            }}
+
+        @media screen and (max-width:375px) {
+          .leftfish{
+            margin-left: 1em;
+            margin-top: -1.5em
+            }}
+
+      .rightfish {
+        font-size: 1.5vw;
+        float: right;
+        text-align: justify;
+        margin-right: 1.5em;
+        width: 45%;
+        padding: 1em;
+        position:relative;
+        }
+
+      a:hover {
+        color: gray;
+        text-decoration: none
+        }
+
+      a:link {
+        color: seagreen;;
+        text-decoration: none;
+        }
+
   </style>
 
   <body style="text-align: center">
     <div>
+      <br>
       <h1 style="font-size: 4vw">The Ocean Avenue Pedestrian Bridge</h1>
+      <span style="font-size: 2.5vw">Welcome to the "bay" part of Sheepshead Bay!</span>
+      <br><br>
+      <div class="leftfish">
+        <br><br>
+        <img src="https://dailygazette.com/sites/default/files/styles/article_image/public/sheepshead-1024x536.jpg?itok=pPNYk_Qs" width="100%">
+      </div>
+      <div class="rightfish">
+          This is where this little Brooklyn neighborhood got its name from!
+          <br><br>Well, sorta...
+          <br><br>Contrary to popular belief, and what I used to think when I first moved here, Sheepshead Bay does not refer to the shape of this bayside neighborhood.
+          <br><br>Sheepshead actually refers to the name of a fish that <i>used</i> to be incredible common in local waters, especially in the early 19th century. So much so that fishing for the Sheepshead became a popular way farmers made money when waiting for the harvest.
+          Since the late 1800s, however, these fish have mysteriously disappeared and are now seldom found this far north of the Atlantic.
+          <a href="https://brooklynbased.com/2009/05/19/the-naming-of-sheepshead-bay/" style="float:right">Learn more</a>
+      </div>
     </div>
-    <div>
-      <br><p style="font-size: 2vw">Welcome to the "bay" part of Sheepshead Bay.</p>
-    </div>
+    <br>
     <!-- Slideshow container -->
 <div class="slideshow-container">
-
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1/3</div>
-    <img src="Sheepshead Dock.jpg" style="width:100%">
-    <br><br><br><br>
+      <img src="Sheepshead Dock.jpg" style="width:100%">
+      <br><br>
     <div class="text">This is where all our boats dock.</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2/3</div>
     <img src="BayBridge.jpg" style="width:100%">
-    <br><br><br><br><br><br>
-    <div class="text">
-      <span>This is our an iconic blue wooden bridge.</span>
-      <br><span>There is a whole 'nother world on the other side</span>
+    <br><br>
+    <div class="text"> A close up of our iconic blue wooden bridge where many have tried to catch crabs and fish from.</span>
     </div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3/3</div>
-    <img src="Sheepshead Bridge.jpg" style="width:100%">
-    <br><br><br><br><br><br>
-    <div class="text">
-      <span>This is our an iconic blue wooden bridge.</span>
-      <br><span>There is a whole 'nother world on the other side</span>
+    <img src="Sheepshead Bridge.jpg" style="width:100%" alt="Bridge" usemap="#across">
+    <map name = "across"> <!--coords: left, top for corners-->
+      <area shape="rect" coords="300,200,800,1000" alt="Outside" href="Esplanade.html">
+    </map>
+    <br><br>
+    <div class="text">There is a whole 'nother world on the other side of this bridge</span>
+      <br><span style="font-size: 1.5vw; text-decoration: line-through">Click the bridge to cross!</span>
     </div>
   </div>
 
@@ -164,6 +240,7 @@
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
     <br><br>
     <a href="MapTest 1.html" style="background-color: lightblue">Back to Maps</a>

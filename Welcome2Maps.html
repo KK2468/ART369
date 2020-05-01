@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      Welcome to Maps!
+    </title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+
+    body {
+      font-family: "Fjalla One", sans-serif;
+      background: linear-gradient(#405166,lightblue);
+      }
+
+    html{
+      height: 100%;
+      }
+
+    .container{
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      display:block;
+      position: absolute;
+      background-color: transparent;
+      height:800px;
+      width: 1000px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          top: 48%;
+          left: 30%;
+          }}
+
+      @media screen and (max-width: 414px) {
+        .container {
+          top: 80%;
+          left: 45%;
+          }}
+
+    .title{
+      transform: translateX(-45%) rotate(-10deg) translateY(15%);
+      display: block;
+      float: left;
+      left: 50%;
+      font-size: 10vw;
+      position:relative;
+      }
+
+      @media screen and (max-width: 414px) {
+        .title {
+          font-size: 14vw;
+          }}
+
+    span{
+      animation-name: appear;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: 2
+      }
+
+      @keyframes appear {
+        0% {opacity: 0}
+        10% {opacity: 0.1}
+        20% {opacity: 0.3}
+        30% {opacity: 0.5}
+        40% {opacity: 0.9}
+        50% {opacity: 1}
+        60% {opacity: 0.9}
+        70% {opacity: 0.5}
+        80% {opacity: 0.3}
+        90% {opacity:0.1}
+        100% {opacity: 0}
+        }
+
+    .bottomnav{
+      top: 85%;
+      left: 50%;
+      display:block;
+      position: absolute;
+      font-size: 2.5vh;
+      transform: rotate(-10deg);
+      }
+
+      @media screen and (max-width: 768px) {
+        .bottomnav {
+          top: 45%;
+          left: 23%;
+          }}
+
+      @media screen and (max-width: 414px) {
+        .bottomnav {
+          top: 64%;
+          left: 30%;
+          }}
+
+      @media screen and (max-width: 375px) {
+        .bottomnav {
+          top: 59%;
+          left: 32%;
+          }}
+
+      @media screen and (max-width: 360px) {
+        .bottomnav {
+          top: 57%;
+          left: 30%;
+          }}
+
+
+
+    a:hover{
+      color: lightseagreen;
+      text-decoration: none;
+      }
+
+    a:visited {
+      color: navy;
+      text-decoration: none
+      }
+
+    a:link {
+      color: gray;
+      text-decoration: none;
+      }
+
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>
+        <div class="title">
+          <span>Welcome</span>
+          <br><span>to Maps!</span>
+          <br><span style="font-size: 5.25vw">(Brooklyn Edition)</span>
+        </div>
+      </h1>
+    </div>
+
+      <div class="bottomnav">
+        <a href="aboutMAPS.html">About</a> &nbsp;&nbsp;&nbsp;
+        <a href="MapTest 1.html">Bklyn</a> &nbsp;&nbsp;&nbsp;
+        <a href="Projects.html">Back</a>
+      </div>
+
+  </body>
+
+  <script>
+
+    $(document).ready(function() {
+      $(".title").lettering();
+      $(".button").lettering();
+    })
+
+    $(document).ready(function(){
+      animation();
+    }, 1000);
+
+    $(".button").click(function(){
+      animation();
+    });
+
+    function animation() {
+      var title1 = new TimelineMax();
+      title1.to(".button", 0, {visibility: "hidden", opacity:0})
+      title1.staggerFromTo( ".title span", 0.5,
+      {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+      {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0},
+      0.05);
+      title1.to(".button", 0.2, {visibility: "visible", opacity:1})
+
+    }
+  </script>
+
+</html>

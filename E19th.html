@@ -61,12 +61,22 @@
   .text {
     color: black;
     font-size: 2vw;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+    padding: .1vw;
+    position: relative;
+    bottom: 1.5%;
     width: 100%;
     text-align: center;
-  }
+    }
+
+    @media screen and (max-width:414px) {
+      .text{
+          bottom: 7.5%;
+        }}
+
+    @media screen and (max-width:375px) {
+      .text{
+          bottom: 7.5%;
+        }}
 
   /* Number text (1/3 etc) */
   .numbertext {
@@ -114,24 +124,58 @@
   <body style="background-color: lightgreen; text-align: center">
     <div>
       <h1 style="font-size: 4vw">East 19th Street</h1>
-      <br><p style="font-size: 2vw">Welcome to My Humble Abode on East 19th Street, between Avenues Y & Z</p>
+      <p style="font-size: 2vw">Congratulations you made it out of the house!
+        <br>Let me show you around :) </p>
     </div>
+
+<!--    <div>
+      <video width="420" height="600" controls>
+        <source src="Thunderstorming.mp4" type="video/mp4">
+      </video>
+    </div> -->
+
     <!-- Slideshow container -->
 <div class="slideshow-container">
-
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 2</div>
+    <div class="numbertext">1/2</div>
     <img src="2519 Street.png" style="width:100%">
-    <br><br><br><br>
-    <div class="text">Down the Block</div>
+    <br><br>
+    <div class="text">This is what it looks like down the block, towards Avenue Z and the bay.
+      <br>This is pretty much a very residential neighborhood, and almost everyone lives in townhouses like these.
+      Once you get to the end of the end of the block, you'll see St.Mark's (the catholic church and its private school).
+    </div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 2</div>
-    <img src="By Rite Aid.png" style="width:100%">
-    <br><br><br><br><br><br>
-    <div class="text">...and if you keep walking down the street, make a left, and cross a few more big streets, you'll find yourself at the Rite Aid!</div>
+    <div class="numbertext">2/4</div>
+    <img src="stmarks school.jpg" style="width:100%">
+    <br><br>
+    <div class="text">
+      We've reached the end of the block. Across the street to our right, is the St.Marks private school, or as it's labeled, "Catholic Academy".
+      Interestingly enough, on the opposite end of the block, towards Avenue Y, is my elementary School P.S.254.
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3/4</div>
+    <img src="Church.jpg" width="50%" height="50%">
+    <br><br>
+    <div class="text">
+      This is one side of St. Mark's catholic church. It's quite large, and its bell tower does chime every so often during the day!
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4/4</div>
+    <img src="By Rite Aid.png" style="width:100%" alt="Nxt2RiteAid" usemap="#OceanAve">
+    <map name = "OceanAve"> <!--coords: left, top for corners-->
+      <area shape="rect" coords="600,0,900,1000" alt="Outside" href="OurBridge.html">
+    </map>
+    <br><br>
+    <div class="text">...and if you walk straight down this street, you'll find yourself at the bay.
+        <br><span style="font-size: 1.5vw">Click down the block to head to the bay!</span>
+    </div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -144,7 +188,12 @@
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
 </div>
+  <br><br><br>
+  <div>
+  </div>
 </body>
 
 <script>
@@ -178,8 +227,9 @@ function showSlides(n) {
 }
 </script>
 
-<br><br><br>
-<a href="MapTest 1.html">Back to Maps</a>
+<br>
+<a href="MapTest 1.html">Back to Maps</a> &nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Home Sweet Home.html"> Go back inside </a>
 </div>
 
     </html>
